@@ -1,0 +1,977 @@
+@charset "UTF-8";
+@import './fonts.css';
+
+.body-freeze {
+    overflow: hidden;
+}
+.section-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 5px solid #0084ff;
+    padding: 20px 0;
+    z-index: 990;
+    transition: padding .2s, background .2s, box-shadow .2s;
+}
+.logo {
+    font-family: 'Audiowide-Regular';
+    font-size: 30px;
+    color: rgba(0, 132, 255, 1);
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1000;
+    height: 60px;
+    padding-top: 15px;
+    transition: height .2s, width .2s, font-size .2s;
+}
+.logo__text {
+    /* display: block; */
+    font-size: 18px;
+    text-transform: none;
+    color: rgba(212, 70, 56, 1);
+}
+.header-nav {
+
+}
+.header-nav__ul {
+    display: flex;
+}
+.header-nav__ul > li {
+    margin-left: 0;
+}
+.header-nav__ul > li:not(:first-child) {
+    position: relative;
+    margin-left: 40px;
+}
+.header-nav__links {
+    font-family: 'BPG Nateli Mtavruli';
+    color: #0084ff;
+    font-size: 18px;
+    transition: color .2s;
+}
+.header-nav__links:hover {
+    color: #d44638;
+}
+.svg-inline--fa.fa-chevron-down.fa-w-14 {
+    font-size: 12px;
+    color: #0084ff;
+    margin-bottom: 2px;
+}
+.svg-inline--fa.fa-chevron-right.fa-w-8 {
+    font-size: 12px;
+    margin-left: 20px;
+}
+.header-nav__div {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left:0%;
+    padding: 25px 0 0;
+}
+.header-nav__ul-sub {
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 0 3px 6px rgba(0,0,0, .5);
+}
+.header-nav__ul-sub > li {
+    margin-bottom: 10px;
+}
+.header-nav__ul-sub > li:last-child {
+    margin-bottom: 0;
+}
+.header-nav__ul > li:nth-of-type(2):hover > .header-nav__div {
+    visibility: visible;
+}
+.header-nav__links-sub {
+    display: block;
+    font-size: 15px;
+    color: #0084ff;
+    padding: 10px 20px;
+    transition: color .2s, background-color .2s;
+}
+.header-nav__links-sub:hover {
+    background-color: #0084ff;
+    color: #fff;
+}
+.responsive-btn {
+    display: none;
+}
+.header-nav__ul-sub--sub {
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 0 3px 6px rgba(0,0,0, .5);
+}
+.header-nav__links-sub--sub {
+    display: block;
+    font-size: 15px;
+    color: #0084ff;
+    padding: 10px 20px;
+    transition: color .2s, background-color .2s;
+}
+.header-nav__links-sub--sub:hover {
+    background-color: #0084ff;
+    color: #fff;
+}
+/*========================== responsive menu ===============*/
+.section-mobile-menu {
+    position: fixed;
+    right: -100%;
+    top:60px;
+    width: 85%;
+    height: calc( 100vh - 60px);
+    box-shadow: 0 0 2px rgba(0,0,0, .5);
+    background-color: #fff;
+    z-index: 985;
+    transition: right .5s;
+    overflow-y: auto;
+}
+.mobile-menu-active {
+    right: 0%;
+}
+.mobile-header-nav {
+    width: 100%;
+    height: 100%;
+}
+.mobile-header-nav__ul {
+    height: 100%;
+    padding-top: 40px;
+}
+.mobile-header-nav__ul--li:first-child {
+    border-radius: 3px;
+    background-color: #0084ff;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mobile-header-nav__links {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-family: 'BPG Nateli Mtavruli';
+    color: #0084ff;
+    font-size: 20px;
+}
+.mobile-header-nav__links > .svg-inline--fa.fa-chevron-right.fa-w-8 {
+    padding-bottom: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 991px){
+    .section-header {
+        padding: 10px 0;
+    }
+    .logo {
+        height:40px;
+    }
+    .header-nav {
+        display: none;
+    }
+    .responsive-btn {
+        display: block;
+        font-size: 32px;
+        color: #0084ff;
+        cursor: pointer;
+        position: relative;
+        z-index: 1000;
+    }
+    .mobile-header-nav__links {
+        font-size: 18px;
+    }
+}
+/*========================== Responsive SUB Menu ============*/
+.mobile-header-nav__sub {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    transition: right .5s;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0, .5);
+}
+.mobile-header-nav__sub-active {
+    right: 0%;
+}
+.mobile-header-nav__ul--sub {
+    height: 100%;
+    padding-top: 40px;
+}
+.mobile-header-nav__ul--li-sub {
+    font-family: 'BPG Nateli Mtavruli';
+    color: #333;
+    margin-bottom: 20px;
+}
+.mobile-header-nav__links-sub {
+    padding: 10px 0;
+    font-family: 'BPG Nateli Mtavruli';
+    color: #0084ff;
+    font-size: 20px;
+}
+.mobile-header-nav__ul--li-sub > .svg-inline--fa.fa-chevron-left.fa-w-8 {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.mobile-header-nav__ul--li-sub:first-child {
+    border-radius: 3px;
+    background-color: #0084ff;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+.mobile-header-nav__ul--li-sub:last-child {
+    border-radius: 3px;
+    background-color: #0084ff;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    text-align: center;
+}
+@media screen and (max-width: 991px){
+    .mobile-header-nav__links-sub {
+        font-size: 18px;
+    }
+}
+/*========================== SECTION HERO ===================*/
+.section-hero {
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0, .8), rgba(0,0,0, .5) ), url(../media/images/hero/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-hero__title {
+    padding: 200px 0 10px;
+    font-family: 'BPG Nateli Mtavruli';
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 3px solid rgba(255,255,255, 0.8);
+    margin-bottom: 20px;
+}
+.section-hero__service:first-child {
+    font-family: 'BPG Nateli Mtavruli';
+    font-size: 24px;
+    color: #fff;
+    padding: 200px 0 10px;
+    border-bottom: 3px solid rgba(255,255,255, 0.8);
+    margin-bottom: 20px;
+}
+.section-hero__service {
+    font-family: 'BPG Nateli Mtavruli';
+    font-size: 18px;
+    color: #0084ff;
+    padding: 5px 0;
+}
+.svg-inline--fa.fa-hand-point-right.fa-w-16 {
+    margin-right: 10px;
+    font-size: 16px;
+}
+.svg-inline--fa.fa-hand-point-left.fa-w-16 {
+    margin-left: 10px;
+    font-size: 16px;
+}
+.section-hero__offer {
+    font-family: 'BPG Nateli Mtavruli';
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 50px 0 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.section-hero__detail-link {
+    width: 200px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'BPG Nateli Mtavruli';
+    font-size: 14px;
+    color: #07fa50;
+    letter-spacing: 1px;
+}
+.svg-inline--fa.fa-arrow-alt-down.fa-w-14 {
+    font-size: 24px;
+}
+@media screen and (max-width: 991px){
+    .section-hero__title {
+        padding: 100px 0 10px;
+        font-size: 20px;
+    }
+    .section-hero__service:first-child {
+        font-size: 20px;
+        padding: 100px 0 10px;
+    }
+    .section-hero__offer {
+        font-size: 28px;
+        line-height: 34px;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-hero__title {
+        padding: 120px 0 10px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .section-hero__service:first-child {
+        font-size: 18px;
+        padding: 120px 0 10px;
+        margin-bottom: 10px;
+    }
+    .section-hero__service {
+        font-size: 16px;
+    }
+    .section-hero__offer {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 30px 0 0;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .section-hero__title {
+        padding: 80px 0 10px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .section-hero__service:first-child {
+        font-size: 18px;
+        padding: 10px 0 10px;
+        margin-bottom: 10px;
+    }
+    .section-hero__service {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .section-hero__title {
+        font-size: 16px;
+    }
+    .section-hero__service:first-child {
+        font-size: 16px;
+    }
+    .section-hero__service {
+        font-size: 14px;
+        padding: 0 0 5px;
+    }
+    .section-hero__offer {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 20px 0 0;
+        width: 100%;
+    }
+    .section-hero__detail-link {
+        margin: 30px auto 0;
+    }
+}
+@media only screen and (max-height: 575px ) and ( orientation: landscape ) {
+    .section-hero__title {
+        display: none;
+    }
+    .section-hero__service:first-child {
+        display: none;
+    }
+    .section-hero__service {
+        display: none;
+    }
+    .section-hero__offer {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 120px 0 0;
+        width: 80%;
+    }
+    .section-hero__detail-link {
+        margin: 30px auto 0;
+    }
+}
+/*========================== section-studio ================*/
+.section-studio {
+    background-color: #ffffff;
+    padding: 40px 0 20px;
+}
+.section-studio__img {
+    width: 100%;
+}
+.section-studio__title {
+    font-family: 'BPG Nateli Mtavruli';
+    font-size: 24px;
+}
+.section-studio__text {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+.section-studio__list {
+    list-style-type: square;
+    padding: 15px 0 0 0;
+    list-style-position: inside;
+}
+.section-studio__list > li {
+    margin-bottom: 10px;
+}
+@media screen and ( max-width: 991px ) {
+    .section-studio__img {
+        margin-bottom: 20px;
+    }
+    .section-studio__title {
+        font-size: 20px;
+    }
+    .section-studio__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media screen and ( max-width: 768px ) {
+    .section-studio__title {
+        font-size: 18px;
+    }
+    .section-studio__text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+/*========================== section-services ==============*/
+.section-services {
+    background-color: #f2f2f2;
+    padding: 40px 0 20px;
+}
+.service-box {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+
+    -webkit-perspective: 1500px;
+    -moz-perspective: 1500px;
+    perspective: 1500px;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.service-box__front {
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0, .3);
+    -webkit-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.service-box__back {
+    background-color: #fff;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0, .3);
+    -webkit-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); 
+}
+
+.service-box__front.active-service-box {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg); 
+}
+.service-box__back.active-service-box {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); 
+}
+
+.service-box__img {
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.service-box__body {
+    padding: 0 20px;
+}
+.service-box__body--title {
+    font-family: 'BPG Nateli Mtavruli';
+    padding: 15px 0;
+    font-size: 18px;
+}
+.service-box__body--text {
+    height: 100px;
+    font-size: 15px;
+    line-height: 19px;
+}
+.service-box__link {
+    padding: 10px 0 20px 20px;
+}
+.service-box__link--a {
+    font-family: 'BPG Nateli Mtavruli';
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-size: 14px;
+    padding: 7px 14px 4px;
+}
+.service-box__body-back {
+    position: relative;
+    padding: 0 20px;
+    height:100%;
+}
+.service-box__back--body-text {
+    margin-bottom: 7px;
+    line-height: 17px;
+    font-size: 14px;
+}
+.seo-icon-wrapper {
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+.seo-icons {
+    width: 50px;
+    height: 50px;
+    font-size: 47px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.google-icon {
+    background-image: url(../media/images/icons/google.png);
+}
+.yahoo-icon {
+    background-image: url(../media/images/icons/Yahoo.png);
+}
+.bing-icon {
+    background-image: url(../media/images/icons/bing.png);
+}
+.yandex-icon {
+    background-image: url(../media/images/icons/yandex.png);
+}
+.service-box__back--link-a {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-family: 'BPG Nateli Mtavruli';
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-size: 14px;
+    padding: 7px 14px 4px;
+}
+@media screen and (max-width: 1199px) {
+    .service-box__back--body-text {
+        line-height: 16px;
+        font-size: 12px;
+    }
+    .seo-icons {
+        width: 30px;
+        height:30px;
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .service-box__back--body-text {
+        line-height: 17px;
+        font-size: 14px;
+    }
+    .seo-icons {
+        width: 50px;
+        height:50px;
+        font-size: 47px;
+    }
+}
+@media screen and ( max-width: 480px ) {
+    .service-box__body--title {
+        padding: 15px 0 10px;
+        font-size: 17px;
+    }
+    .service-box__body--text {
+        height: 100px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .service-box__back--body-text {
+        line-height: 16px;
+        font-size: 12px;
+    }
+    .seo-icons {
+        width: 30px;
+        height:30px;
+        font-size: 27px;
+    }
+}
+/*========================== section-Portfolio ==================*/
+.section-portfolio {
+    background-color: #fff;
+    padding: 40px 0 20px;
+    overflow-x: hidden;
+}
+.products {
+    display: flex;
+}
+.product-box {
+    position: relative;
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0, .5);
+    overflow: hidden;
+}
+.product-box--first {
+    background-image: url(../media/images/projects/besmart.jpg);
+}
+.product-box--second {
+    background-image: url(../media/images/projects/beartist.jpg);
+}
+.product-box--third {
+    background-image: url(../media/images/projects/taco.jpg);
+}
+.product-box--fourth {
+    background-image: url(../media/images/projects/kate.jpg);
+}
+.product-box:hover > .product-box__content {
+    height: 130px;
+}
+.product-box__content {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0, .9);
+    padding: 20px;
+    letter-spacing: .5px;
+    transition: height .2s;
+    color: #fff;
+}
+.product-box__content--title {
+    font-family: 'BPG Nateli Mtavruli';
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.product-box__content--sub-title {
+    font-family: 'BPG Nateli Mtavruli';
+    font-size: 14px;
+}
+.product-box__content--sub-title:nth-of-type(1) {
+    padding: 10px 0;
+}
+.product-box__content--sub-title:nth-of-type(2) {
+    line-height: 20px;
+}
+.product-box__content--sub-title > .product-box__content--sub-title-span {
+    font-size: 12px;
+    padding: 5px 10px 3px;
+    color: #fff;
+}
+.product-box__content--sub-title > span{
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #fff;
+}
+@media screen and ( max-width: 768px ) {
+    .product-box:hover > .product-box__content {
+        height: initial;
+    }
+    .product-box__content {
+        height: auto;
+    }
+    .product-box__content--sub-title:nth-of-type(2) {
+        display: none;
+    }
+    .products {
+        display: block;
+    }
+    .product-box {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .product-box__content {
+        padding: 10px;
+    }
+    .product-box__content--title {
+        font-family: 'BPG Nateli Mtavruli';
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+    .product-box__content--sub-title:nth-of-type(1) {
+        padding: 10px 0 0;
+    }
+}
+/*========================== section-contact ===============*/
+.section-contact {
+    background-color: #f2f2f2;
+    padding: 60px 0 80px;
+}
+.contact-title {
+    font-family: 'BPG Nateli Mtavruli';
+    letter-spacing: .5px;
+    color: #0084ff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.svg-inline--fa.fa-pen-alt.fa-w-16,
+.svg-inline--fa.fa-phone.fa-w-16 {
+    margin-right: 15px;
+}
+.contact-text {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 20px 40px;
+    box-shadow: 0 5px 10px rgba(0, 132, 255, .3);
+    font-size: 20px;
+    color: #b159f8;
+}
+.contact-text:last-child {
+    margin-bottom: 0;
+}
+.svg-inline--fa.fa-envelope-open-text.fa-w-16,
+.svg-inline--fa.fa-facebook-messenger.fa-w-14,
+.svg-inline--fa.fa-mobile-android-alt.fa-w-10 {
+    color: #63fa90;
+    width: 30px;
+    height: 30px;
+}
+.svg-inline--fa.fa-envelope-open-text.fa-w-16 {
+    color: #d44638;
+    margin-right: 10px;
+}
+.svg-inline--fa.fa-facebook-messenger.fa-w-14 {
+    color: #0084ff;
+    margin-right: 10px;
+}
+@media screen and ( max-width: 768px ) {
+    .contact-title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+}
+@media screen and ( max-width: 480px ) {
+    .contact-title {
+        font-family: 'BPG Nateli Mtavruli';
+        letter-spacing: .5px;
+        color: #0084ff;
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .svg-inline--fa.fa-pen-alt.fa-w-16,
+    .svg-inline--fa.fa-phone.fa-w-16 {
+        margin-right: 10px;
+    }
+    .contact-text {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .svg-inline--fa.fa-envelope-open-text.fa-w-16,
+    .svg-inline--fa.fa-facebook-messenger.fa-w-14,
+    .svg-inline--fa.fa-mobile-android-alt.fa-w-10 {
+        width: 20px;
+        height: 20px;
+    }
+}
+/*========================== section-footer ================*/
+.section-footer {
+    background-color: #000;
+}
+footer {
+    padding: 20px 0;
+}
+.footer-text {
+    font-family: 'Audiowide-Regular';
+    font-size: 24px;
+    color: rgba(0, 132, 255, 1);
+    letter-spacing: .5px;
+}
+.footer-text__span {
+    font-size: 16px;
+    color: rgba(212, 70, 56, 1);
+}
+.footer-text:first-child {
+    margin-bottom: 5px;
+}
+@media screen and ( max-width: 768px ) {
+    .footer-text {
+        text-align: center;
+        font-size: 18px;
+    }
+    .footer-text__span {
+        font-size: 14px;
+    }
+}
+/* ========================= Scroll Top ==================== */
+.scrollTop {
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    background-color: #0084ff;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 900;
+    width: 50px;
+    height: 50px;
+}
+.scrollTop a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+.svg-inline--fa.fa-angle-up.fa-w-8 {
+    color: #fff;
+    font-size: 40px;
+}
+/*========================== Facebook ======================*/
+.fb_iframe_widget {
+    display: block !important;
+    position: relative;
+    text-align: right;
+}
+@media screen and ( max-width: 768px ) {
+    .fb_iframe_widget {
+        text-align: center;
+    }
+}
+/*========================== UTILITES ======================*/
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-title {
+    padding: 50px 0 70px;
+}
+.main-title__h1 {
+    font-family: 'BPG Nateli Mtavruli';
+    color: #0084ff;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svg-inline--fa.fa-handshake-alt.fa-w-20,
+.svg-inline--fa.fa-cogs.fa-w-20,
+.svg-inline--fa.fa-palette.fa-w-16,
+.svg-inline--fa.fa-paper-plane.fa-w-16,
+.svg-inline--fa.fa-code.fa-w-18 {
+    color: #d44638;
+    margin-right: 20px;
+    font-size: 42px;
+}
+@media screen and ( max-width: 768px ) {
+    .main-title {
+        padding: 30px 0 40px;
+    }
+    .main-title__h1 {
+        font-size: 20px;
+    }
+    .svg-inline--fa.fa-handshake-alt.fa-w-20,
+    .svg-inline--fa.fa-cogs.fa-w-20,
+    .svg-inline--fa.fa-palette.fa-w-16,
+    .svg-inline--fa.fa-paper-plane.fa-w-16 {
+        color: #d44638;
+        margin-right: 10px;
+        font-size: 32px;
+    }
+}
+.hideme{
+    opacity:0;
+}
+.visible{
+    opacity:1;
+}
+/*============= Colors ===================================*/
+.bg-color-green {
+    background-color: #07fa50;
+}
+.bg-color-red {
+    background-color: #d44638;
+}
+.bg-color-blue {
+    background-color: #0084ff;
+}
+.bg-color-pink {
+    background-color: #b159f8;
+}
+.bg-color-white {
+    background-color: #fff;;
+}
+.color-green {
+    color: #07fa50;
+}
+.color-red {
+    color: #d44638;
+}
+.color-blue {
+    color: #0084ff;
+}
+.color-pink {
+    color: #b159f8;
+}
+.color-white {
+    color: #fff;
+}
+/*================= Padding / Margin =============================*/
+.p-x--1 {
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+.p-x--2 {
+    padding: 1px 3px 2px;
+    border-radius: 4px;
+}
+.m-bottom-small {
+    margin-bottom: 5px;
+}
+.m-top-small {
+    margin-top: 5px;
+}
+.m-right-small {
+    margin-right: 10px;
+}
+.d-inline-block {
+    display: inline-block;
+}
+/*======================= text ========================*/
+.text-right {
+    text-align: right
+}
+.text-center {
+    text-align: center;
+}
