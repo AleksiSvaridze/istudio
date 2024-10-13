@@ -1,341 +1,673 @@
 <!DOCTYPE html>
 <html lang="ka" id="home-id">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144033714-1"></script>
+  <head></head>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-144033714-1');
+      gtag("config", "UA-144033714-1");
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>iStudio.ge | ვებ საიტის დამზადება | saitebis damzadeba, saitebi</title>
-    <!--Facebook Like Button-->
-    <meta property="og:url"           content="http://istudio.ge/index.html" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="iStudio.ge | ვებ საიტის დამზადება" />
-    <meta property="og:description"   content="საიტების დამზადება - მოდერნიზაცია, SEO ოპტიმიზაცია და საიტის ადმინისტრირება" />
-    <meta property="og:image"         content="http://istudio.ge/media/hero/hero.jpg" />
-    <!--End Facebook Like Button-->
-    <meta name="description" content="iStudio.ge გთავაზობთ საიტების დამზადება - მოდერნიზაციას,SEO ოპტიმიზაციას და თქვენი საიტის ადმინისტრირება - მართვას.ვებ საიტის დამზადება მაღალი ხარისხით, თანამედროვე ტექნოლოგიებით და მისაღები ფასებით. saitebis damzadeba, saitebi">
-    <meta name="keywords" content="iStudio.ge გთავაზობთ საიტების დამზადება - მოდერნიზაციას,SEO ოპტიმიზაციას და თქვენი საიტის ადმინისტრირება - მართვას.ვებ საიტის დამზადება მაღალი ხარისხით, თანამედროვე ტექნოლოგიებით და მისაღები ფასებით. saitebis damzadeba, saitebi">
-    <meta name="author" content="iStudio">
-    <link rel="icon" type="image/png" href="./media/images/icons/shortcut.png">
-    <link rel="stylesheet" href="./css/reset.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./css/animate.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script async defer 
-    crossorigin="anonymous" 
-    src="https://connect.facebook.net/ka_GE/sdk.js#xfbml=1&version=v4.0"></script>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      iStudio.ge | ვებ საიტის დამზადება | saitebis damzadeba, saitebi
+    </title>
+    <meta
+      name="description"
+      content="iStudio.ge გთავაზობთ საიტების დამზადება - მოდერნიზაციას,SEO ოპტიმიზაციას და თქვენი საიტის ადმინისტრირება - მართვას.ვებ საიტის დამზადება მაღალი ხარისხით, თანამედროვე ტექნოლოგიებით და მისაღები ფასებით. saitebis damzadeba, saitebi"
+    />
+    <meta
+      name="keywords"
+      content="iStudio.ge გთავაზობთ საიტების დამზადება - მოდერნიზაციას,SEO ოპტიმიზაციას და თქვენი საიტის ადმინისტრირება - მართვას.ვებ საიტის დამზადება მაღალი ხარისხით, თანამედროვე ტექნოლოგიებით და მისაღები ფასებით. saitebis damzadeba, saitebi"
+    />
+    <meta name="author" content="iStudio" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./media/images/icons/shortcut.png"
+    />
+    <link rel="stylesheet" href="./css/reset.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <section class="section-main section-header">
-        <header class="container flex-between">
-            <a href="#home-id" class="logo scroll"><span class="logo__text">i</span>Studio.ge</a>
-            <nav class="header-nav">
-                <ul class="header-nav__ul">
-                    <li><a href="#home-id" class="header-nav__links scroll">მთავარი</a></li>
-                    <li>
-                        <a href="#service-id" class="header-nav__links scroll">სერვისი</a>
-                        <i class="fal fa-chevron-down"></i>
-                        <div class="header-nav__div">
-                            <ul class="header-nav__ul-sub">
-                                <li><a href="#service-id" class="header-nav__links-sub scroll">ვებ საიტის დამზადება</a></li>
-                                <li><a href="#service-id" class="header-nav__links-sub scroll">ვებ ადმინისტრირება</a></li>
-                                <li><a href="#service-id" class="header-nav__links-sub scroll">SEO - საიტის ოპტიმიზაცია</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#portfolio-id" class="header-nav__links scroll">პორტფოლიო</a></li>
-                    <li><a href="#contact-id" class="header-nav__links scroll">კონტაქტი</a></li>
+      <header class="container flex-between">
+        <a href="#home-id" class="logo scroll"
+          ><span class="logo__text">i</span>Studio.ge</a
+        >
+        <nav class="header-nav">
+          <ul class="header-nav__ul">
+            <li>
+              <a href="#home-id" class="header-nav__links scroll">მთავარი</a>
+            </li>
+            <li>
+              <a href="#service-id" class="header-nav__links scroll">სერვისი</a>
+              <i class="fal fa-chevron-down"></i>
+              <div class="header-nav__div">
+                <ul class="header-nav__ul-sub">
+                  <li>
+                    <a href="#service-id" class="header-nav__links-sub scroll"
+                      >ვებ საიტის დამზადება</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#service-id" class="header-nav__links-sub scroll"
+                      >ვებ ადმინისტრირება</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#service-id" class="header-nav__links-sub scroll"
+                      >SEO - საიტის ოპტიმიზაცია</a
+                    >
+                  </li>
                 </ul>
-            </nav>
-            <div class="responsive-btn btn">
-                <i class="fal fa-bars"></i>
-            </div>
-        </header>
-    </section> <!--section-main section-header-->
-    
-    <section class="section-main section-mobile-menu">
-        <nav class="mobile-header-nav">
-            <ul class="mobile-header-nav__ul container">
-                <li class="mobile-header-nav__ul--li">მენიუ</li>
-                <li class="mobile-header-nav__ul--li"><a href="#home-id" class="mobile-header-nav__links scroll">მთავარი</a></li>
-                <li class="mobile-header-nav__ul--li"><a href="#website" class="mobile-header-nav__links scroll" id="">ვებ საიტების დამზადება</a></li>
-                <li class="mobile-header-nav__ul--li"><a href="#administration" class="mobile-header-nav__links scroll">ვებ ადმინისტრირება</a></li>
-                <li class="mobile-header-nav__ul--li"><a href="#seo" class="mobile-header-nav__links scroll">SEO - საიტის ოპტიმიზაცია</a></li>
-                <li class="mobile-header-nav__ul--li"><a href="#portfolio-id" class="mobile-header-nav__links scroll">პორტფოლიო</a></li>
-                <li class="mobile-header-nav__ul--li"><a href="#contact-id" class="mobile-header-nav__links scroll">კონტაქტი</a></li>
-            </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#portfolio-id" class="header-nav__links scroll"
+                >პორტფოლიო</a
+              >
+            </li>
+            <li>
+              <a href="#contact-id" class="header-nav__links scroll"
+                >კონტაქტი</a
+              >
+            </li>
+          </ul>
         </nav>
-    </section> <!--section-main section-mobile-menu-->
+        <div class="responsive-btn btn">
+          <i class="fal fa-bars"></i>
+        </div>
+      </header>
+    </section>
+    <!--section-main section-header-->
+
+    <section class="section-main section-mobile-menu">
+      <nav class="mobile-header-nav">
+        <ul class="mobile-header-nav__ul container">
+          <li class="mobile-header-nav__ul--li">მენიუ</li>
+          <li class="mobile-header-nav__ul--li">
+            <a href="#home-id" class="mobile-header-nav__links scroll"
+              >მთავარი</a
+            >
+          </li>
+          <li class="mobile-header-nav__ul--li">
+            <a href="#website" class="mobile-header-nav__links scroll" id=""
+              >ვებ საიტების დამზადება</a
+            >
+          </li>
+          <li class="mobile-header-nav__ul--li">
+            <a href="#administration" class="mobile-header-nav__links scroll"
+              >ვებ ადმინისტრირება</a
+            >
+          </li>
+          <li class="mobile-header-nav__ul--li">
+            <a href="#seo" class="mobile-header-nav__links scroll"
+              >SEO - საიტის ოპტიმიზაცია</a
+            >
+          </li>
+          <li class="mobile-header-nav__ul--li">
+            <a href="#portfolio-id" class="mobile-header-nav__links scroll"
+              >პორტფოლიო</a
+            >
+          </li>
+          <li class="mobile-header-nav__ul--li">
+            <a href="#contact-id" class="mobile-header-nav__links scroll"
+              >კონტაქტი</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!--section-main section-mobile-menu-->
 
     <section class="section-main section-hero">
-        <section class="container">
-            <section class="row">
-                <section class="col-lg-6 col-md-6 col-sm-6">
-                    <h1 class="section-hero__title">ვებ საიტების დამზადება</h1>
-                    <h2 class="section-hero__service"><i class="fal fa-hand-point-right"></i>ხელსაყრელი ფასები</h2>
-                    <h2 class="section-hero__service"><i class="fal fa-hand-point-right"></i>მაღალი ხარისხი</h2>
-                    <h2 class="section-hero__service"><i class="fal fa-hand-point-right"></i>200 ლარიდან</h2>
-                </section>
-                <section class="col-lg-6 col-md-6 col-sm-6">
-                    <h2 class="section-hero__service text-right">ჩვენი სერვისები</h2>
-                    <h2 class="section-hero__service text-right">ვებ საიტების დამზადება<i class="fal fa-hand-point-left"></i></h2>
-                    <h2 class="section-hero__service text-right">ვებ ადმინისტრირება<i class="fal fa-hand-point-left"></i></h2>
-                    <h2 class="section-hero__service text-right">SEO ოპტიმიზაცია<i class="fal fa-hand-point-left"></i></h2>
-                </section>
-                 <section class="col-lg-12 col-md-12 col-sm-12">
-                    <h1 class="section-hero__offer text-center">ნებისმიერი ტიპის ვებ საიტის დამზადება</h1>
-                </section>
-                 <section class="col-lg-12 col-md-12 col-sm-12">
-                    <a href="#studio-id" class="section-hero__detail-link scroll">დეტალურად<i class="fal fa-arrow-alt-down"></i></a>
-                </section>
-            </section>
+      <section class="container">
+        <section class="row">
+          <section class="col-lg-6 col-md-6 col-sm-6">
+            <h1 class="section-hero__title">ვებ საიტების დამზადება</h1>
+            <h2 class="section-hero__service">
+              <i class="fal fa-hand-point-right"></i>ხელსაყრელი ფასები
+            </h2>
+            <h2 class="section-hero__service">
+              <i class="fal fa-hand-point-right"></i>მაღალი ხარისხი
+            </h2>
+            <h2 class="section-hero__service">
+              <i class="fal fa-hand-point-right"></i>200 ლარიდან
+            </h2>
+          </section>
+          <section class="col-lg-6 col-md-6 col-sm-6">
+            <h2 class="section-hero__service text-right">ჩვენი სერვისები</h2>
+            <h2 class="section-hero__service text-right">
+              ვებ საიტების დამზადება<i class="fal fa-hand-point-left"></i>
+            </h2>
+            <h2 class="section-hero__service text-right">
+              ვებ ადმინისტრირება<i class="fal fa-hand-point-left"></i>
+            </h2>
+            <h2 class="section-hero__service text-right">
+              SEO ოპტიმიზაცია<i class="fal fa-hand-point-left"></i>
+            </h2>
+          </section>
+          <section class="col-lg-12 col-md-12 col-sm-12">
+            <h1 class="section-hero__offer text-center">
+              ნებისმიერი ტიპის ვებ საიტის დამზადება
+            </h1>
+          </section>
+          <section class="col-lg-12 col-md-12 col-sm-12">
+            <a href="#studio-id" class="section-hero__detail-link scroll"
+              >დეტალურად<i class="fal fa-arrow-alt-down"></i
+            ></a>
+          </section>
         </section>
-    </section> <!--section-main section-hero-->
+      </section>
+    </section>
+    <!--section-main section-hero-->
 
     <section class="section-main section-studio" id="studio-id">
-            <section class="main-title">
-                <h1 class="main-title__h1"><i class="fal fa-code"></i>iStudio.ge</h1>
-            </section>
-    
-            <section class="container">
-                <section class="row">
-                    <section class="col-lg-6 col-md-12 col-sm-12 section-studio__animated-img">
-                        <img src="./media/images/service/website.jpg" alt="" class="section-studio__img">
-                    </section>
-                    <section class="col-lg-6 col-md-12 col-sm-12 section-studio__animated-text">
-                       <h1 class="section-studio__title color-blue">თანამედროვე საიტები, თანამედროვე ტექნოლოგიები</h1>
-                       <p class="section-studio__text">ჩვენ ვამზადებთ ნებისმიერი სახის ვებ-საიტებს. ახალი ტექნოლოგიები და ჩვენი გამოცდილება გვაძლევს საშუალებას შევქმნათ საიტები, რომელთა ხარისხი და უნიკალურობა ნებისმიერი ფირმის და ინდივიდუალურ მოთხოვნებს დააკმაყოფილებს. ჩვენ არ ვიყენებთ მზა ძრავებს, ჩვენ ვქმნით საკუთარს, პროექტის მოთხოვნების შესაბამისს.</p>
-                       <h1 class="section-studio__title color-red">ჩვენი პრიორიტეტებია:</h1>
-                       <ul class="section-studio__list">
-                            <li>პროექტის შინაარსის პრაქტიკული რეალიზაცია</li>
-                            <li>საიტის მფლობელისთვის და მომხმარებლისთვის მოსახერხებელი ინტერფეისის / პლატფორმის შექმნა</li>
-                            <li>პროექტის დათქმულ ვადაში ჩაბარება</li>
-                       </ul>
-                    </section>
-                </section>
-            </section>
-    </section> <!--section-main section-services-->
+      <section class="main-title">
+        <h1 class="main-title__h1"><i class="fal fa-code"></i>iStudio.ge</h1>
+      </section>
+
+      <section class="container">
+        <section class="row">
+          <section
+            class="col-lg-6 col-md-12 col-sm-12 section-studio__animated-img"
+          >
+            <img
+              src="./media/images/service/website.jpg"
+              alt=""
+              class="section-studio__img"
+            />
+          </section>
+          <section
+            class="col-lg-6 col-md-12 col-sm-12 section-studio__animated-text"
+          >
+            <h1 class="section-studio__title color-blue">
+              თანამედროვე საიტები, თანამედროვე ტექნოლოგიები
+            </h1>
+            <p class="section-studio__text">
+              ჩვენ ვამზადებთ ნებისმიერი სახის ვებ-საიტებს. ახალი ტექნოლოგიები და
+              ჩვენი გამოცდილება გვაძლევს საშუალებას შევქმნათ საიტები, რომელთა
+              ხარისხი და უნიკალურობა ნებისმიერი ფირმის და ინდივიდუალურ
+              მოთხოვნებს დააკმაყოფილებს. ჩვენ არ ვიყენებთ მზა ძრავებს, ჩვენ
+              ვქმნით საკუთარს, პროექტის მოთხოვნების შესაბამისს.
+            </p>
+            <h1 class="section-studio__title color-red">
+              ჩვენი პრიორიტეტებია:
+            </h1>
+            <ul class="section-studio__list">
+              <li>პროექტის შინაარსის პრაქტიკული რეალიზაცია</li>
+              <li>
+                საიტის მფლობელისთვის და მომხმარებლისთვის მოსახერხებელი
+                ინტერფეისის / პლატფორმის შექმნა
+              </li>
+              <li>პროექტის დათქმულ ვადაში ჩაბარება</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!--section-main section-services-->
 
     <section class="section-main section-services" id="service-id">
-        <section class="main-title">
-            <h1 class="main-title__h1"><i class="fas fa-handshake-alt"></i>რას გთავაზობთ?</h1>
-        </section>
+      <section class="main-title">
+        <h1 class="main-title__h1">
+          <i class="fas fa-handshake-alt"></i>რას გთავაზობთ?
+        </h1>
+      </section>
 
-        <section class="container">
-            <section class="row">
-
-                <section class="col-lg-4 col-md-12 col-sm-12">
-                    <section class="service-box" id="website">
-                        <section class="service-box__front">
-                            <section class="service-box__img" style="background-image: url(./media/images/service/website.jpg)"></section>
-                            <section class="service-box__body">
-                                <h1 class="service-box__body--title color-blue">ვებ-საიტების დამზადება</h1>
-                                <p class="service-box__body--text">ვებ საიტების დამზადება თანამედროვე ტექნოლოგიების გამოყენებით. ვებ-საიტები ადაპტირებული იქნება ყველა მოწყობილობისთვის</p>
-                            </section>
-                            <section class="service-box__link">
-                                <a href="#" class="service-box__link--a bg-color-blue" id="website-id">დეტალურად</a>
-                            </section>
-                        </section>
-                        <section class="service-box__back">
-                            <section class="service-box__body-back">
-                                <h1 class="service-box__body--title color-blue">ვებ საიტის დამზადება</h1>
-                                <p class="service-box__back--body-text">გთავაზობთ <span class="bg-color-blue p-x--2 color-white">ნებისმიერი სახის</span> ვებ საიტის დამზადებას ან თქვენს საკუთრებაში არსებული ვებ გვერდების მოდერნიზაცია - გადაკეთებას თქვენი მოთხოვნების შესაბამისად</p>
-                                <div class="seo-icon-wrapper">
-                                    <div class="seo-icons color-blue"><i class="fal fa-desktop-alt"></i></div>
-                                    <div class="seo-icons color-blue"><i class="fal fa-laptop"></i></div>
-                                    <div class="seo-icons color-blue"><i class="fal fa-tablet"></i></div>
-                                    <div class="seo-icons color-blue"><i class="fal fa-mobile"></i></div>
-                                </div>
-                                <p class="service-box__back--body-text">- <span class="bg-color-blue color-white p-x--1">პორტფოლიო / პერსონალური</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-blue color-white p-x--1">ბროშურა / სავიზიტო</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-blue color-white p-x--1">მცირე ბიზნესი / ტურისტული</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-blue color-white p-x--1">მედია / საინფორმაციო</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-blue color-white p-x--1">ონლაინ მაღაზია</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-blue color-white p-x--1">სასწავლო / შემეცნებითი</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-blue color-white p-x--1">ბიზნეს / წარმომადგენლობითი</span></p>
-                                <a href="#" id="website-back" class="service-box__back--link-a bg-color-blue" >უკან დაბრუნება</a>
-                            </section>
-                        </section>
-                    </section> <!--service-box-->
+      <section class="container">
+        <section class="row">
+          <section class="col-lg-4 col-md-12 col-sm-12">
+            <section class="service-box" id="website">
+              <section class="service-box__front">
+                <section
+                  class="service-box__img"
+                  style="
+                    background-image: url(./media/images/service/website.jpg);
+                  "
+                ></section>
+                <section class="service-box__body">
+                  <h1 class="service-box__body--title color-blue">
+                    ვებ-საიტების დამზადება
+                  </h1>
+                  <p class="service-box__body--text">
+                    ვებ საიტების დამზადება თანამედროვე ტექნოლოგიების
+                    გამოყენებით. ვებ-საიტები ადაპტირებული იქნება ყველა
+                    მოწყობილობისთვის
+                  </p>
                 </section>
-
-                <section class="col-lg-4 col-md-12 col-sm-12">
-                    <section class="service-box" id="administration">
-                        <section class="service-box__front">
-                            <section class="service-box__img" style="background-image: url(./media/images/service/administration.jpg)"></section>
-                            <section class="service-box__body">
-                                <h1 class="service-box__body--title color-red">ვებ ადმინისტრირება</h1>
-                                <p class="service-box__body--text">გთავაზობთ ვებ-საიტების ადმინისტრირებას და მართვას. მნიშვნელობა არ აქვს საიტი ჩვენთან იქნება დამზადებული თუ სხვა ვებ-სტუდიაში</p>
-                            </section>
-                            <section class="service-box__link">
-                                <a href="#" class="service-box__link--a bg-color-red" id="administration-id">დეტალურად</a>
-                            </section>
-                        </section>
-                        <section class="service-box__back">
-                            <section class="service-box__body-back">
-                                <h1 class="service-box__body--title color-red">საიტის ადმინისტრირება</h1>
-                                <p class="service-box__back--body-text">თუ ხართ დაკავებული და არ გაქვთ დრო თქვენს საიტზე განაახლოთ კონტენტი (<span class="bg-color-red p-x--2 color-white">ფოტო</span>, <span class="bg-color-red p-x--2 color-white">ვიდეო</span>, <span class="bg-color-red p-x--2 color-white">აუდიო</span>, <span class="bg-color-red p-x--2 color-white">ტექსტური მასალები</span>), გთავაზობთ თქვენი საიტის მართვა - ადმინისტრირების მომსახურებას</p>
-                                <div class="seo-icon-wrapper">
-                                    <div class="seo-icons color-red"><i class="fal fa-images"></i></div>
-                                    <div class="seo-icons color-red"><i class="fal fa-video"></i></div>
-                                    <div class="seo-icons color-red"><i class="fal fa-font"></i></div>
-                                    <div class="seo-icons color-red"><i class="fal fa-music"></i></div>
-                                </div>
-                                <p class="service-box__back--body-text">ჩვენ დაგეხმარებით და თქვენს ვებ-გვერდებზე განვათავსებთ ყველა სახის კონტენტს:</p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-red color-white p-x--2 m-bottom-small d-inline-block m-top-small">ვიდეო</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-red color-white p-x--2 m-bottom-small d-inline-block">ტექსტები</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-red color-white p-x--2 m-bottom-small d-inline-block">აუდიო</span></p>
-                                <p class="service-box__back--body-text">- <span class="bg-color-red color-white p-x--2">სურათები</span></p>
-                                <a href="#" id="administration-back" class="service-box__back--link-a bg-color-red" >უკან დაბრუნება</a>
-                            </section>
-                        </section>
-                    </section> <!--service-box-->
+                <section class="service-box__link">
+                  <a
+                    href="#"
+                    class="service-box__link--a bg-color-blue"
+                    id="website-id"
+                    >დეტალურად</a
+                  >
                 </section>
-
-                <section class="col-lg-4 col-md-12 col-sm-12">
-                    <section class="service-box" id="seo">
-                        <section class="service-box__front">
-                            <section class="service-box__img" style="background-image: url(./media/images/service/seo.jpg)"></section>
-                            <section class="service-box__body">
-                                <h1 class="service-box__body--title color-green">საიტის ოპტიმიზაცია ( SEO )</h1>
-                                <p class="service-box__body--text">ვებ საიტის ოპტიმიზაცია და რეკლამირება საძიებო სისტემებში, როგორიცაა - Google, Yahoo, Bing, Yandex და სხვა</p>
-                            </section>
-                            <section class="service-box__link">
-                                <a href="#" class="service-box__link--a bg-color-green" id="seo-id">დეტალურად</a>
-                            </section>
-                        </section>
-                        <section class="service-box__back">
-                            <section class="service-box__body-back">
-                                <h1 class="service-box__body--title color-green">საიტის ოპტიმიზაცია ( SEO )</h1>
-                                <p class="service-box__back--body-text">გთავაზობთ <span class="bg-color-green p-x--1">SEO</span>-ს და <span class="bg-color-green p-x--1">Google AdWords</span>-ის საშუალებით ვებ საიტის ოპტიმიზაციას, რეკლამირებას, ვებ საიტის ხილვადობის გაზრდას საძიებო სისტემებში, როგორიცაა - Google, Yahoo, Bing, Yandex და სხვა..</p>
-                                <div class="seo-icon-wrapper">
-                                    <div class="seo-icons google-icon"></div>
-                                    <div class="seo-icons bing-icon"></div>
-                                    <div class="seo-icons yahoo-icon"></div>
-                                    <div class="seo-icons yandex-icon"></div>
-                                </div>
-                                <p class="service-box__back--body-text">- <span class="bg-color-green p-x--1">SEO</span>-ს ტექნიკური მხარის გამოყენებით ( On-page SEO, Off-page SEO ) და სწორი სტრატეგიით თქვენი საიტისთვის მოწინავე პოზიციის მინიჭება საძიებო სისტემებში.</p>
-                                <br>
-                                <p class="service-box__back--body-text">- <span class="bg-color-green p-x--1">Google AdWords</span>-ი გაძლევთ საშუალებას საიტზე შემოიყვანოთ მიზნობრივი აუდიტორია, რომელიც დაინტერესებულია თქვენი პროდუქტის მოძიება / შეძენით.</p>
-                                <a href="#" id="seo-back" class="service-box__back--link-a bg-color-green" >უკან დაბრუნება</a>
-                            </section>
-                        </section>
-                    </section> <!--service-box-->
+              </section>
+              <section class="service-box__back">
+                <section class="service-box__body-back">
+                  <h1 class="service-box__body--title color-blue">
+                    ვებ საიტის დამზადება
+                  </h1>
+                  <p class="service-box__back--body-text">
+                    გთავაზობთ
+                    <span class="bg-color-blue p-x--2 color-white"
+                      >ნებისმიერი სახის</span
+                    >
+                    ვებ საიტის დამზადებას ან თქვენს საკუთრებაში არსებული ვებ
+                    გვერდების მოდერნიზაცია - გადაკეთებას თქვენი მოთხოვნების
+                    შესაბამისად
+                  </p>
+                  <div class="seo-icon-wrapper">
+                    <div class="seo-icons color-blue">
+                      <i class="fal fa-desktop-alt"></i>
+                    </div>
+                    <div class="seo-icons color-blue">
+                      <i class="fal fa-laptop"></i>
+                    </div>
+                    <div class="seo-icons color-blue">
+                      <i class="fal fa-tablet"></i>
+                    </div>
+                    <div class="seo-icons color-blue">
+                      <i class="fal fa-mobile"></i>
+                    </div>
+                  </div>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-blue color-white p-x--1"
+                      >პორტფოლიო / პერსონალური</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-blue color-white p-x--1"
+                      >ბროშურა / სავიზიტო</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-blue color-white p-x--1"
+                      >მცირე ბიზნესი / ტურისტული</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-blue color-white p-x--1"
+                      >მედია / საინფორმაციო</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-blue color-white p-x--1"
+                      >ონლაინ მაღაზია</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-blue color-white p-x--1"
+                      >სასწავლო / შემეცნებითი</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-blue color-white p-x--1"
+                      >ბიზნეს / წარმომადგენლობითი</span
+                    >
+                  </p>
+                  <a
+                    href="#"
+                    id="website-back"
+                    class="service-box__back--link-a bg-color-blue"
+                    >უკან დაბრუნება</a
+                  >
                 </section>
-
+              </section>
             </section>
+            <!--service-box-->
+          </section>
+
+          <section class="col-lg-4 col-md-12 col-sm-12">
+            <section class="service-box" id="administration">
+              <section class="service-box__front">
+                <section
+                  class="service-box__img"
+                  style="
+                    background-image: url(./media/images/service/administration.jpg);
+                  "
+                ></section>
+                <section class="service-box__body">
+                  <h1 class="service-box__body--title color-red">
+                    ვებ ადმინისტრირება
+                  </h1>
+                  <p class="service-box__body--text">
+                    გთავაზობთ ვებ-საიტების ადმინისტრირებას და მართვას.
+                    მნიშვნელობა არ აქვს საიტი ჩვენთან იქნება დამზადებული თუ სხვა
+                    ვებ-სტუდიაში
+                  </p>
+                </section>
+                <section class="service-box__link">
+                  <a
+                    href="#"
+                    class="service-box__link--a bg-color-red"
+                    id="administration-id"
+                    >დეტალურად</a
+                  >
+                </section>
+              </section>
+              <section class="service-box__back">
+                <section class="service-box__body-back">
+                  <h1 class="service-box__body--title color-red">
+                    საიტის ადმინისტრირება
+                  </h1>
+                  <p class="service-box__back--body-text">
+                    თუ ხართ დაკავებული და არ გაქვთ დრო თქვენს საიტზე განაახლოთ
+                    კონტენტი (<span class="bg-color-red p-x--2 color-white"
+                      >ფოტო</span
+                    >,
+                    <span class="bg-color-red p-x--2 color-white">ვიდეო</span>,
+                    <span class="bg-color-red p-x--2 color-white">აუდიო</span>,
+                    <span class="bg-color-red p-x--2 color-white"
+                      >ტექსტური მასალები</span
+                    >), გთავაზობთ თქვენი საიტის მართვა - ადმინისტრირების
+                    მომსახურებას
+                  </p>
+                  <div class="seo-icon-wrapper">
+                    <div class="seo-icons color-red">
+                      <i class="fal fa-images"></i>
+                    </div>
+                    <div class="seo-icons color-red">
+                      <i class="fal fa-video"></i>
+                    </div>
+                    <div class="seo-icons color-red">
+                      <i class="fal fa-font"></i>
+                    </div>
+                    <div class="seo-icons color-red">
+                      <i class="fal fa-music"></i>
+                    </div>
+                  </div>
+                  <p class="service-box__back--body-text">
+                    ჩვენ დაგეხმარებით და თქვენს ვებ-გვერდებზე განვათავსებთ ყველა
+                    სახის კონტენტს:
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span
+                      class="bg-color-red color-white p-x--2 m-bottom-small d-inline-block m-top-small"
+                      >ვიდეო</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span
+                      class="bg-color-red color-white p-x--2 m-bottom-small d-inline-block"
+                      >ტექსტები</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span
+                      class="bg-color-red color-white p-x--2 m-bottom-small d-inline-block"
+                      >აუდიო</span
+                    >
+                  </p>
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-red color-white p-x--2"
+                      >სურათები</span
+                    >
+                  </p>
+                  <a
+                    href="#"
+                    id="administration-back"
+                    class="service-box__back--link-a bg-color-red"
+                    >უკან დაბრუნება</a
+                  >
+                </section>
+              </section>
+            </section>
+            <!--service-box-->
+          </section>
+
+          <section class="col-lg-4 col-md-12 col-sm-12">
+            <section class="service-box" id="seo">
+              <section class="service-box__front">
+                <section
+                  class="service-box__img"
+                  style="background-image: url(./media/images/service/seo.jpg)"
+                ></section>
+                <section class="service-box__body">
+                  <h1 class="service-box__body--title color-green">
+                    საიტის ოპტიმიზაცია ( SEO )
+                  </h1>
+                  <p class="service-box__body--text">
+                    ვებ საიტის ოპტიმიზაცია და რეკლამირება საძიებო სისტემებში,
+                    როგორიცაა - Google, Yahoo, Bing, Yandex და სხვა
+                  </p>
+                </section>
+                <section class="service-box__link">
+                  <a
+                    href="#"
+                    class="service-box__link--a bg-color-green"
+                    id="seo-id"
+                    >დეტალურად</a
+                  >
+                </section>
+              </section>
+              <section class="service-box__back">
+                <section class="service-box__body-back">
+                  <h1 class="service-box__body--title color-green">
+                    საიტის ოპტიმიზაცია ( SEO )
+                  </h1>
+                  <p class="service-box__back--body-text">
+                    გთავაზობთ <span class="bg-color-green p-x--1">SEO</span>-ს
+                    და
+                    <span class="bg-color-green p-x--1">Google AdWords</span>-ის
+                    საშუალებით ვებ საიტის ოპტიმიზაციას, რეკლამირებას, ვებ საიტის
+                    ხილვადობის გაზრდას საძიებო სისტემებში, როგორიცაა - Google,
+                    Yahoo, Bing, Yandex და სხვა..
+                  </p>
+                  <div class="seo-icon-wrapper">
+                    <div class="seo-icons google-icon"></div>
+                    <div class="seo-icons bing-icon"></div>
+                    <div class="seo-icons yahoo-icon"></div>
+                    <div class="seo-icons yandex-icon"></div>
+                  </div>
+                  <p class="service-box__back--body-text">
+                    - <span class="bg-color-green p-x--1">SEO</span>-ს ტექნიკური
+                    მხარის გამოყენებით ( On-page SEO, Off-page SEO ) და სწორი
+                    სტრატეგიით თქვენი საიტისთვის მოწინავე პოზიციის მინიჭება
+                    საძიებო სისტემებში.
+                  </p>
+                  <br />
+                  <p class="service-box__back--body-text">
+                    -
+                    <span class="bg-color-green p-x--1">Google AdWords</span>-ი
+                    გაძლევთ საშუალებას საიტზე შემოიყვანოთ მიზნობრივი აუდიტორია,
+                    რომელიც დაინტერესებულია თქვენი პროდუქტის მოძიება / შეძენით.
+                  </p>
+                  <a
+                    href="#"
+                    id="seo-back"
+                    class="service-box__back--link-a bg-color-green"
+                    >უკან დაბრუნება</a
+                  >
+                </section>
+              </section>
+            </section>
+            <!--service-box-->
+          </section>
         </section>
-    </section> <!--section-main section-services-->
+      </section>
+    </section>
+    <!--section-main section-services-->
 
     <section class="section-main section-portfolio" id="portfolio-id">
-        <section class="main-title">
-            <h1 class="main-title__h1"><i class="fal fa-palette"></i>ჩვენი ნამუშევრები</h1>
+      <section class="main-title">
+        <h1 class="main-title__h1">
+          <i class="fal fa-palette"></i>ჩვენი ნამუშევრები
+        </h1>
+      </section>
+      <section class="container">
+        <section class="row">
+          <section class="col-lg-6">
+            <section class="product-box product-box--third">
+              <section class="product-box__content">
+                <h2 class="product-box__content--title">
+                  ბოლოს დასრულებული პროექტი
+                </h2>
+                <h3 class="product-box__content--sub-title">
+                  საიტის ტიპი:
+                  <span
+                    class="product-box__content--sub-title-span bg-color-green"
+                    >კაფე - მცირე ბიზნესი</span
+                  >
+                </h3>
+                <h3 class="product-box__content--sub-title">
+                  გამოყენებული ტექნოლოგიები:
+                  <span class="bg-color-green">html5</span>
+                  <span class="bg-color-green">css3</span>
+                  <span class="bg-color-green">javaScript</span>
+                  <span class="bg-color-green">jquery</span>
+                </h3>
+              </section>
+            </section>
+          </section>
+          <section class="col-lg-6">
+            <section class="product-box product-box--fourth">
+              <section class="product-box__content">
+                <h2 class="product-box__content--title">მიმდინარე პროექტი</h2>
+                <h3 class="product-box__content--sub-title">
+                  საიტის ტიპი:
+                  <span
+                    class="product-box__content--sub-title-span bg-color-red"
+                    >ტურისტული - მცირე ბიზნესი</span
+                  >
+                </h3>
+                <h3 class="product-box__content--sub-title">
+                  გამოყენებული ტექნოლოგიები:
+                  <span class="bg-color-red">html5</span>
+                  <span class="bg-color-red">css3</span>
+                  <span class="bg-color-red">bootstrap</span>
+                  <span class="bg-color-red">javaScript</span>
+                  <span class="bg-color-red">jquery</span>
+                  <span class="bg-color-red">c#</span>
+                </h3>
+              </section>
+            </section>
+          </section>
+          <section class="col-lg-6">
+            <section class="product-box product-box--first">
+              <section class="product-box__content">
+                <h2 class="product-box__content--title">მიმდინარე პროექტი</h2>
+                <h3 class="product-box__content--sub-title">
+                  საიტის ტიპი:
+                  <span
+                    class="product-box__content--sub-title-span bg-color-blue"
+                    >შემეცნებითი - საინფორმაციო</span
+                  >
+                </h3>
+                <h3 class="product-box__content--sub-title">
+                  გამოყენებული ტექნოლოგიები:
+                  <span class="bg-color-blue">html5</span>
+                  <span class="bg-color-blue">css3</span>
+                  <span class="bg-color-blue">javaScript</span>
+                  <span class="bg-color-blue">jquery</span>
+                  <span class="bg-color-blue">c#</span>
+                </h3>
+              </section>
+            </section>
+          </section>
+          <section class="col-lg-6">
+            <section class="product-box product-box--second">
+              <section class="product-box__content">
+                <h2 class="product-box__content--title">მიმდინარე პროექტი</h2>
+                <h3 class="product-box__content--sub-title">
+                  საიტის ტიპი:
+                  <span
+                    class="product-box__content--sub-title-span bg-color-pink"
+                    >ონლაინ მაღაზია</span
+                  >
+                </h3>
+                <h3 class="product-box__content--sub-title">
+                  გამოყენებული ტექნოლოგიები:
+                  <span class="bg-color-pink">html5</span>
+                  <span class="bg-color-pink">css3</span>
+                  <span class="bg-color-pink">javaScript</span>
+                  <span class="bg-color-pink">jquery</span>
+                  <span class="bg-color-pink">c#</span>
+                </h3>
+              </section>
+            </section>
+          </section>
         </section>
-        <section class="container">
-           <section class="row">
-               <section class="col-lg-6">
-                    <section class="product-box product-box--third">
-                        <section class="product-box__content">
-                            <h2 class="product-box__content--title">ბოლოს დასრულებული პროექტი</h2>
-                            <h3 class="product-box__content--sub-title">საიტის ტიპი: <span class="product-box__content--sub-title-span bg-color-green">კაფე - მცირე ბიზნესი</span></h3>
-                            <h3 class="product-box__content--sub-title">გამოყენებული ტექნოლოგიები: <span class="bg-color-green">html5</span> <span class="bg-color-green">css3</span> <span class="bg-color-green">javaScript</span> <span class="bg-color-green">jquery</span></h3>
-                        </section>
-                    </section>
-               </section>
-               <section class="col-lg-6">
-                    <section class="product-box product-box--fourth">
-                        <section class="product-box__content">
-                            <h2 class="product-box__content--title">მიმდინარე პროექტი</h2>
-                            <h3 class="product-box__content--sub-title">საიტის ტიპი: <span class="product-box__content--sub-title-span bg-color-red">ტურისტული - მცირე ბიზნესი</span></h3>
-                            <h3 class="product-box__content--sub-title">გამოყენებული ტექნოლოგიები: <span class="bg-color-red">html5</span> <span class="bg-color-red">css3</span> <span class="bg-color-red">bootstrap</span> <span class="bg-color-red">javaScript</span> <span class="bg-color-red">jquery</span> <span class="bg-color-red">c#</span></h3>
-                        </section>
-                    </section>
-               </section>
-               <section class="col-lg-6">
-                    <section class="product-box product-box--first">
-                        <section class="product-box__content">
-                            <h2 class="product-box__content--title">მიმდინარე პროექტი</h2>
-                            <h3 class="product-box__content--sub-title">საიტის ტიპი: <span class="product-box__content--sub-title-span bg-color-blue">შემეცნებითი - საინფორმაციო</span></h3>
-                            <h3 class="product-box__content--sub-title">გამოყენებული ტექნოლოგიები: <span class="bg-color-blue">html5</span> <span class="bg-color-blue">css3</span> <span class="bg-color-blue">javaScript</span> <span class="bg-color-blue">jquery</span> <span class="bg-color-blue">c#</span></h3>
-                        </section>
-                    </section>
-               </section>
-               <section class="col-lg-6">
-                    <section class="product-box product-box--second">
-                        <section class="product-box__content">
-                            <h2 class="product-box__content--title">მიმდინარე პროექტი</h2>
-                            <h3 class="product-box__content--sub-title">საიტის ტიპი: <span class="product-box__content--sub-title-span bg-color-pink">ონლაინ მაღაზია</span></h3>
-                            <h3 class="product-box__content--sub-title">გამოყენებული ტექნოლოგიები: <span class="bg-color-pink">html5</span> <span class="bg-color-pink">css3</span> <span class="bg-color-pink">javaScript</span> <span class="bg-color-pink">jquery</span> <span class="bg-color-pink">c#</span></h3>
-                        </section>
-                    </section>
-               </section>
-           </section>
-        </section>
-    </section> <!--section-main section-portfolio-->
+      </section>
+    </section>
+    <!--section-main section-portfolio-->
 
     <section class="section-main section-contact" id="contact-id">
-        <section class="main-title">
-            <h1 class="main-title__h1"><i class="fal fa-paper-plane"></i>კონტაქტი</h1>
-        </section>
-        <section class="container">
-            <div class="row" id="contact_id">
+      <section class="main-title">
+        <h1 class="main-title__h1">
+          <i class="fal fa-paper-plane"></i>კონტაქტი
+        </h1>
+      </section>
+      <section class="container">
+        <div class="row" id="contact_id">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2 class="contact-title">
+              <i class="fal fa-pen-alt"></i>მოგვწერეთ:
+            </h2>
+            <a href="mailto: istudio.ge@gmail.com" class="contact-text"
+              ><i class="fal fa-envelope-open-text"></i>info@istudio.ge</a
+            >
+            <a
+              href="https://web.facebook.com/webpages4you/?modal=admin_todo_tour"
+              target="_blank"
+              class="contact-text"
+              ><i class="fab fa-facebook-messenger"></i>istudio@webpages4you</a
+            >
+          </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2 class="contact-title"><i class="fal fa-pen-alt"></i>მოგვწერეთ:</h2>
-                    <a href="mailto: istudio.ge@gmail.com" class="contact-text"><i class="fal fa-envelope-open-text"></i>info@istudio.ge</a>
-                    <a href="https://web.facebook.com/webpages4you/?modal=admin_todo_tour" target="_blank" class="contact-text"><i class="fab fa-facebook-messenger"></i>istudio@webpages4you</a>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2 class="contact-title"><i class="fal fa-phone"></i>დაგვირეკეთ:</h2>
-                    <a href="tel:+995597000000" class="contact-text"><i class="fas fa-mobile-android-alt"></i>+ ( 995 ) 597 00 00 00</a>
-                    <a href="tel:+995599000000" class="contact-text"><i class="fas fa-mobile-android-alt"></i>+ ( 995 ) 599 00 00 00</a>
-                </div>
-
-            </div>
-        </section>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2 class="contact-title">
+              <i class="fal fa-phone"></i>დაგვირეკეთ:
+            </h2>
+            <a href="tel:+995597000000" class="contact-text"
+              ><i class="fas fa-mobile-android-alt"></i>+ ( 995 ) 597 00 00
+              00</a
+            >
+            <a href="tel:+995599000000" class="contact-text"
+              ><i class="fas fa-mobile-android-alt"></i>+ ( 995 ) 599 00 00
+              00</a
+            >
+          </div>
+        </div>
+      </section>
     </section>
-   
+
     <section class="section-main section-footer">
-        <footer>
-            <section class="container">
-                <section class="row">
-                    <section class="col-lg-6 col-md-6 col-sm-12">
-                        <p class="footer-text">iStudio.ge<span class="footer-text__span"> &copy; 2019</span></p>
-                    </section>
-                    <section class="col-lg-6 col-md-6 col-sm-12">
-                        <!-- Your like button code -->
-                        <div class="fb-like" 
-                            data-href="http://istudio.ge/" 
-                            data-width="" 
-                            data-layout="button_count" 
-                            data-action="like" 
-                            data-size="small" 
-                            data-show-faces="true" 
-                            data-share="true">
-                        </div>
-                    </section>
-                </section>
-            </section>
-        </footer>
-    </section> <!--section-main section-footer-->
+      <footer>
+        <section class="container">
+          <p class="footer-text text-center">
+            iStudio.ge<span class="footer-text__span"> &copy; 2019</span>
+          </p>
+        </section>
+      </footer>
+    </section>
+    <!--section-main section-footer-->
 
     <section id="stop" class="scrollTop">
-        <a href="">
-            <i class="fal fa-angle-up"></i>
-        </a> 
+      <a href="">
+        <i class="fal fa-angle-up"></i>
+      </a>
     </section>
 
     <script src="./js/jQuery.js"></script>
@@ -343,5 +675,5 @@
     <script src="./js/localScroll.js"></script>
     <script src="./js/jquery.viewportchecker.min.js"></script>
     <script src="./js/scripts.js"></script>
-</body>
+  </body>
 </html>
